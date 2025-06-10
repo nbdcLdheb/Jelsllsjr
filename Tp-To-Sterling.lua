@@ -1,8 +1,4 @@
-AddButton(Tab4o, {
-    Name = "Tp To Sterling",
-    Callback = function()
-        pcall(function()
-            -- Hook SetCore để chặn thông báo
+-- Hook SetCore để chặn thông báo
             local originalSetCore = game:GetService("StarterGui").SetCore
             local blocked = {"SendNotification"}
 
